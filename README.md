@@ -358,7 +358,7 @@
 <div class="app">
     <div class="hero">
         <h1>🧪 Юный химик 🧪</h1>
-        <p>лаборатория элементов и реакций по таблице Менделеева</p>
+        <p>лаборатория элементов и реакций</p>
     </div>
 
     <div class="nav-tabs">
@@ -372,7 +372,7 @@
         <div class="table-title">⭐ главные элементы ⭐</div>
         <div class="periodic-grid" id="periodicGrid"></div>
         <div class="note">
-            🔬 нажми на элемент чтобы узнать его символ
+            🔬 нажми на элемент чтобы скопировать его символ
         </div>
     </div>
 
@@ -430,7 +430,7 @@
 </div>
 
 <script>
-    // ---------- 1. СПИСОК ВЕЩЕСТВ ДЛЯ РЕАКЦИЙ (только менделеевские) ----------
+    // ---------- 1. СПИСОК ВЕЩЕСТВ ДЛЯ РЕАКЦИЙ  ----------
     const reagentsList = [
         { id: "h2", name: "Водород H₂", formula: "H₂" },
         { id: "o2", name: "Кислород O₂", formula: "O₂" },
@@ -450,8 +450,8 @@
         { id: "n2", name: "Азот N₂", formula: "N₂" },
         { id: "nh3", name: "Аммиак NH₃", formula: "NH₃" },
         { id: "caco3", name: "Карбонат кальция CaCO₃", formula: "CaCO₃" },
-        { id: "electro", name: "Электрический ток ⚡", formula: "эл.ток" },
-        { id: "heat", name: "Нагревание 🔥", formula: "t°" },
+        { id: "electro", name: "Электрический ток", formula: "эл.ток" },
+        { id: "heat", name: "Нагревание", formula: "t°" },
         { id: "mg", name: "Магний Mg", formula: "Mg" }
     ];
 
@@ -465,7 +465,7 @@
         reactionsDb.set(key2, { eq: equation, desc: desc });
     }
 
-    // наполнение реакциями (много)
+    // наполнение реакциями 
     addReaction("h2", "o2", "2H₂ + O₂ → 2H₂O", "горение водорода, образуется вода");
     addReaction("na", "cl2", "2Na + Cl₂ → 2NaCl", "яркая реакция, поваренная соль");
     addReaction("h2", "cl2", "H₂ + Cl₂ → 2HCl", "на свету, получается хлороводород");
@@ -584,7 +584,7 @@
         }
     }
 
-    // сброс реакции (очистка полей вывода)
+    // сброс реакции 
     function resetReactionDisplay() {
         const eqDiv = document.getElementById('reactionEquation');
         const descDiv = document.getElementById('reactionDescription');
